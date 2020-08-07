@@ -17,7 +17,7 @@
    href="style.css">
 </head>
 <body>
-
+<button onClick="topFunction()" id="mybtn" title="Top" class="btn btn-danger decorate">Top</button>
 <div class="navbar navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="#">GQ</a>
@@ -28,14 +28,14 @@
 <div class="container-fluid img-1">
   <div class="row text-center text-1">
 	  <div class="col-2"></div>
-	  <div class="col-8 mt-5">
-		  <h1 class="text-white">Build a landing page for your business or project and generate more leads!</h1>
+	  <div class=" col-xl-9 col-12 mt-5">
+		  <h1 class="text-white size">Build a landing page for your business or project and generate more leads!</h1>
 		  <form>
 			  <div class="row p-5">
-				  <div class="col-9">
+				  <div class="col-md-9 col-sm-12">
                     <input type="email" class="form-control" placeholder="Enter your Email..." id="sign-up" name="email">
                   </div>
-				  <div class="col-3">
+				  <div class="col-md-3 col-sm-12">
 					  <button class="btn btn-primary col-12" type="button" id="sign-up-btn">Sign up !</button>
 				  </div>
 			  </div>       
@@ -47,19 +47,19 @@
 	<div class="container-fluid bg-light p-5">
 	<div class="container p-5">
 		<div class="row">
-			<div class="col-4 icon-1 text-center p-3">
+			<div class="col-md-4 col-sm-12 icon-1 text-center p-3">
 				<i class="fa fa-laptop" aria-hidden="true"></i>
 
 				<h2>Fully Responsive</h2>
 				<p class="text-resize">This theme will look great on any device, no matter the size!</p>
 			</div>
-			<div class="col-4 icon-1 text-center p-3">
+			<div class="col-md-4 col-sm-12 icon-1 text-center p-3">
 				<i class="fa fa-check-square-o" aria-hidden="true"></i>
 
 				<h2>Bootstrap 4 Ready</h2>
 				<p class="text-resize">Featuring the latest build of the new Bootstrap 4 framework!</p>
 			</div>
-			<div class="col-4 icon-1 text-center p-3">
+			<div class="col-md-4 col-sm-12 icon-1 text-center p-3">
 				<i class="fa fa-users" aria-hidden="true"></i>
 
 				<h2>Easy to Use</h2>
@@ -71,46 +71,46 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-6 p-5 text-2">
+			<div class="col-md-6 col-sm-12 p-5 text-2">
 				<h1>Fully Responsive Design</h1>
 				<p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
 			</div>
-			<div class="col-6">
+			<div class="col-md-6 col-sm-12 ">
 				<img src="images/bg-showcase-1.jpg" width="100%">
 			</div>
-			<div class="col-6">
+			<div class="col-md-6 col-sm-12">
 				<img src="images/bg-showcase-2.jpg" width="100%">
 			</div>
-			<div class="col-6 p-5">
+			<div class="col-md-6 col-sm-12 p-5 text-2">
 				<h1>Fully Responsive Design</h1>
 				<p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
 			</div>
 			
-			<div class="col-6 p-5">
+			<div class="col-md-6 col-sm-12 p-5 text-2">
 				<h1>Fully Responsive Design</h1>
 				<p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
 			</div>
-			<div class="col-6">
+			<div class="col-md-6 col-sm-12">
 				<img src="images/bg-showcase-3.jpg" width="100%">
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid text-center bg-light">
-		<div class="container pt-5s">
+		<div class="container pt-5 text-2">
 		<h1>What people are saying...</h1>
 		<div class="row">
-			<div class="col-4 p-5">
+			<div class="col-md-4 col-sm-12 p-5">
 				<img src="images/testimonials-1.jpg" class="rounded-circle" width="80%">
 				<h3>Margaret E.</h3>
 				<p>"This is fantastic! Thanks so much guys!"</p>
 			</div>
-			<div class="col-4 p-5">
+			<div class="col-md-4 col-sm-12 p-5">
 				<img src="images/testimonials-2.jpg" class="rounded-circle" width="80%">
 				<h3>Margaret E.</h3>
 				<p>"This is fantastic! Thanks so much guys!"</p>
 			</div>
-			<div class="col-4 p-5">
+			<div class="col-md-4 col-sm-12 p-5">
 				<img src="images/testimonials-3.jpg" class="rounded-circle" width="80%">
 				<h3>Margaret E.</h3>
 				<p>"This is fantastic! Thanks so much guys!"</p>
@@ -118,6 +118,28 @@
 		</div>
 		</div>
 	</div>
-
+	<script>
+	
+    //Get the button
+    var mybutton = document.getElementById("mybtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    
+	</script>
 </body>
 </html>

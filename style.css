@@ -34,3 +34,20 @@
 .icon-2 {
 	font-size:200% 
 }
+@media (max-width:768px){
+	.size{
+		font-size:35px;
+	}
+	.text-2 h1{
+		font-size: 30px;
+	}
+}
+
+.decorate {
+	display: none;
+	position: fixed;
+	z-index: 99;
+	cursor: pointer;
+	bottom: 20px;
+	right:30px;
+}
