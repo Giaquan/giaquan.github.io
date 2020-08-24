@@ -1,53 +1,107 @@
 /* CSS Document */
-
-.img-1{
-	background-image: url("images/bg-masthead.jpg");
-	background-attachment: fixed;
+*{
+	padding: 0 ;
+	margin: 0 ;
+}
+.container-fluid{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.background {
+	background-image: url("img/181010131059-australia-best-beaches-cossies-beach-cocos3-full-169.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
+	height: 700px;
+	width: 100%;
 }
 
-.br-1 {
-	height:500%;
+.heading-1 {
+	line-height: 700px !important; 
+	z-index: 2;
+}
+.darken {
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	height:inherit;
+	opacity: 0.4;
+	z-index: 0;
+}
+.fix {
+	padding-top:15%;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+.text-fix i{
+	font-size: 50px;
 }
 
-.text-1 {
-	padding: 10%;
+.filter ul{
+	display: inline;
+}
+.filter li{
+	list-style-type: none;
+	float: left;
+	margin-left: 50px;
+}
+.filter li a{
+	color: gray;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #969696;
+}
+textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #969696;
 }
 
-
-.icon-1 {
-	font-size:500%;
+.style-btn {
+	border-radius:50px !important;
 }
-.text-resize {
-	font-size: 20%;
+.row{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
 }
-
-.text-2 {
-	margin:0px auto;
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width :34px;
+  height: 55px;
 }
-
-.list {
-	display: inline-block;
-	padding-right: 5%
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
 }
-
-.icon-2 {
-	font-size:200% 
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
 }
-@media (max-width:768px){
-	.size{
-		font-size:35px;
-	}
-	.text-2 h1{
-		font-size: 30px;
-	}
-}
-
-.decorate {
-	display: none;
-	position: fixed;
-	z-index: 99;
-	cursor: pointer;
-	bottom: 20px;
-	right:30px;
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
